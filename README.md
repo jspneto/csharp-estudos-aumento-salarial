@@ -27,9 +27,14 @@ Em seguida:
 ```bash
 |- Projeto/
    |- Img/
+   |- Src/
+      |- IO/
+         |- FuncionarioInputs.cs
+      |- Funcionario.cs
+   |- Program.cs
+   |- ProgramExamples.cs
    |- Projeto.csproj
    |- Projeto.sln
-   |- Program.cs
    |- README.md
 ```
 
@@ -37,8 +42,10 @@ Em seguida:
 
 ## Evolução do Projeto (Tags)
 
-<lista de links para as tags do projeto>
+- [**v0.1**][1] — Modelo orientado a objetos para aumento salarial
 
 ## Objetivo Educacional
 
 Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
+
+[1]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.1/Projeto "v0.1"
