@@ -6,15 +6,15 @@ static class FuncionarioInputs
 {
     public static Funcionario CriarFuncionario()
     {
-        Funcionario f = new();        
-
         Console.Write("Nome: ");
-        f.Nome = Console.ReadLine()!;
+        string nome = Console.ReadLine()!;
         Console.Write("Salário Bruto: $ ");
-        f.SalarioBruto = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double salario = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
         Console.Write("Imposto aplicado: $ ");
-        f.Imposto = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double imposto = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
 
+        Funcionario f = new(nome, salario, imposto);
+        
         return f;
     }
 }
