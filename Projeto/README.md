@@ -4,19 +4,19 @@ Programa simples em C# para leitura e exibição de dados de um funcionário, c�
 
 ## Detalhes Gerais
 
-- **Versão**: 0.2
-- **Conceito aplicado:** Construtores
+- **Versão**: 0.3
+- **Conceito aplicado:** Encapsulamento
 
 ## Descrição da Tag
 
-Implementacao de construtores na classe Funcionario para garantir a inicializacao controlada dos atributos.
+Implementacao de encapsulamento nos atributos da classe Funcionario.
 
-Foi criado um construtor completo contendo nome, salario bruto e imposto, alem de um construtor parcial utilizando encadeamento com this(...) para definir valores padrao.
+O atributo Nome passou a utilizar campo privado com property validada, enquanto SalarioBruto e Imposto foram convertidos para auto-properties com modificador private set, restringindo alteracoes externas.
 
-A classe FuncionarioInputs foi atualizada para utilizar o construtor completo, e foi criado o metodo ExemploConstrutores para demonstrar o uso das diferentes formas de instanciacao do objeto.
+Foi criado o metodo ExemploEncapsulamento para demonstrar a atualizacao controlada do nome do funcionario atraves da property.
 
-Esta versao introduz os conceitos de construtores e sobrecarga aplicados ao modelo orientado a objetos.
+Esta versao consolida o conceito de encapsulamento aplicado ao modelo orientado a objetos.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.2.png" alt="Exemplo Construtores" width="936">
+<img src="Img/Screenshot-v0.3.png" alt="Exemplo Encapsulamento" width="936">
