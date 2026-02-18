@@ -1,6 +1,6 @@
-# Nome Completo do Projeto
+# Cáculo de Aumento Salarial
 
-<descrição resumida do projeto>
+Programa simples em C# para leitura e exibição de dados de um funcionário, cálculo de salário líquido e aplicação de aumento percentual sobre o salário bruto.
 
 Este projeto foi desenvolvido de forma incremental, registrando a evolução do código em uma abordagem **orientada a objetos**.
 
@@ -14,7 +14,13 @@ Este projeto foi desenvolvido de forma incremental, registrando a evolução do 
 
 ## Enunciado do Projeto
 
-<descrição detalhada do problema resolvido no projeto>
+Fazer um programa para ler os dados de um funcionário (nome, salário bruto e imposto).
+
+Em seguida:
+
+- Mostrar os dados do funcionário (nome e salário líquido)
+- Aplicar um aumento percentual informado pelo usuário (apenas o salário bruto é afetado pela porcentagem)
+- Mostrar novamente os dados atualizados do funcionário
 
 ## Estrutura do Projeto
 
