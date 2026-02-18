@@ -41,4 +41,21 @@ static class ProgramExamples
         Console.WriteLine();
         Console.WriteLine(f2.ToString());
     }
+
+    public static void ExemploEncapsulamento()
+    {
+        Console.WriteLine("Exemplo de uso de Encapsulamento");
+
+        Console.WriteLine();
+        Console.WriteLine("Entre com os dados do funcionário:");
+        Funcionario f = FuncionarioInputs.CriarFuncionario();
+        Console.WriteLine();
+        Console.WriteLine(f.ToString());
+
+        Console.WriteLine();
+        Console.Write("Atualize o nome do funcionário: ");
+        f.Nome = Console.ReadLine()!;
+        Console.WriteLine();
+        Console.WriteLine(f.ToString());
+    }
 }

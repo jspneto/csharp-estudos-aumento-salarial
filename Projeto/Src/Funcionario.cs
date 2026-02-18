@@ -4,23 +4,39 @@ namespace Projeto.Src;
 
 class Funcionario
 {
-    public string Nome;
-    public double SalarioBruto;
-    public double Imposto;
+    private string _nome;
+    public double SalarioBruto { get; private set; }
+    public double Imposto {get; private set; }
 
     public Funcionario(string nome, double salario, double imposto)
     {
         if (nome != null && nome != "")
         {
-            Nome = nome;
+            _nome = nome;
         }
         else
         {
-            Nome = "Funcionário";
+            _nome = "Funcionário";
         }
 
         SalarioBruto = salario;
         Imposto = imposto;
+    }
+
+    public string Nome
+    {
+        get
+        {
+            return _nome;
+        }
+
+        set
+        {
+            if (value != null && value != "")
+            {
+                _nome = value;
+            }
+        }
     }
 
     public Funcionario(string nome) : this(nome, 3000.0, 150.0) {}
