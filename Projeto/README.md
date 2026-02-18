@@ -4,19 +4,19 @@ Programa simples em C# para leitura e exibição de dados de um funcionário, c�
 
 ## Detalhes Gerais
 
-- **Versão**: 0.1
-- **Conceito aplicado:** Classes
+- **Versão**: 0.2
+- **Conceito aplicado:** Construtores
 
 ## Descrição da Tag
 
-Implementacao inicial do problema utilizando orientacao a objetos.
+Implementacao de construtores na classe Funcionario para garantir a inicializacao controlada dos atributos.
 
-A classe Funcionario concentra os dados Nome, SalarioBruto e Imposto, alem dos metodos SalarioLiquido e AumentarSalario, responsaveis pelo calculo do salario liquido e pela aplicacao do reajuste percentual.
+Foi criado um construtor completo contendo nome, salario bruto e imposto, alem de um construtor parcial utilizando encadeamento com this(...) para definir valores padrao.
 
-A entrada de dados foi organizada na classe FuncionarioInputs, enquanto o fluxo principal do problema foi centralizado em ProgramExamples, mantendo o Program.cs apenas como ponto de entrada.
+A classe FuncionarioInputs foi atualizada para utilizar o construtor completo, e foi criado o metodo ExemploConstrutores para demonstrar o uso das diferentes formas de instanciacao do objeto.
 
-Esta versao consolida a modelagem orientada a objetos basica aplicada ao problema de aumento salarial.
+Esta versao introduz os conceitos de construtores e sobrecarga aplicados ao modelo orientado a objetos.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.1.png" alt="Solução Problema" width="936">
+<img src="Img/Screenshot-v0.2.png" alt="Exemplo Construtores" width="936">
