@@ -4,19 +4,19 @@ Programa simples em C# para leitura e exibição de dados de um funcionário, c�
 
 ## Detalhes Gerais
 
-- **Versão**: 0.3
-- **Conceito aplicado:** Encapsulamento
+- **Versão**: 0.4
+- **Conceito aplicado:** Validação de Entradas
 
 ## Descrição da Tag
 
-Implementacao de encapsulamento nos atributos da classe Funcionario.
+Implementacao de validacoes internas na classe Funcionario para garantir integridade dos dados.
 
-O atributo Nome passou a utilizar campo privado com property validada, enquanto SalarioBruto e Imposto foram convertidos para auto-properties com modificador private set, restringindo alteracoes externas.
+Foram criados metodos privados para validar nome, salario e imposto, definindo valores minimos e limites aceitaveis conforme regras de negocio.
 
-Foi criado o metodo ExemploEncapsulamento para demonstrar a atualizacao controlada do nome do funcionario atraves da property.
+O metodo AumentarSalario tambem passou a validar o percentual informado, impedindo aplicacao de reajustes negativos ou invalidos.
 
-Esta versao consolida o conceito de encapsulamento aplicado ao modelo orientado a objetos.
+Esta versao fortalece o modelo de dominio ao concentrar regras de negocio diretamente na entidade.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.3.png" alt="Exemplo Encapsulamento" width="936">
+<img src="Img/Screenshot-v0.1.png" alt="Solução Problema" width="936">
