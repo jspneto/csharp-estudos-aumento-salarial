@@ -45,6 +45,7 @@ Em seguida:
 - [**v0.1**][1] — Modelo orientado a objetos para aumento salarial
 - [**v0.2**][2] — Aplicacao de construtores e sobrecarga na classe Funcionario
 - [**v0.3**][3] — Aplicacao de encapsulamento na classe Funcionario
+- [**v0.4**][4] — Validacao e regras de negocio na classe Funcionario
 
 ## Objetivo Educacional
 
@@ -53,3 +54,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [1]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.1/Projeto "v0.1"
 [2]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.2/Projeto "v0.2"
 [3]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.3/Projeto "v0.3"
+[4]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.4/Projeto "v0.4"
