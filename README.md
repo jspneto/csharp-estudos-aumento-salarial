@@ -14,13 +14,28 @@ Este projeto foi desenvolvido de forma incremental, registrando a evolução do 
 
 ## Enunciado do Projeto
 
-Fazer um programa para ler os dados de um funcionário (nome, salário bruto e imposto).
+Fazer um programa para ler um número inteiro N, representando a quantidade de funcionários a serem cadastrados. Em seguida, ler os dados de N funcionários, contendo:
 
-Em seguida:
+- Id (inteiro)
+- Nome
+- Salário bruto
+- Imposto
 
-- Mostrar os dados do funcionário (nome e salário líquido)
-- Aplicar um aumento percentual informado pelo usuário (apenas o salário bruto é afetado pela porcentagem)
-- Mostrar novamente os dados atualizados do funcionário
+Não deve haver repetição de Id. Caso um Id informado já exista na lista, o cadastro deve ser rejeitado ou solicitado novamente. Após o cadastro:
+
+- Mostrar a lista de funcionários contendo nome e salário líquido.
+- Ler um Id correspondente a um funcionário cadastrado.
+- Ler um percentual de aumento.
+- Aplicar o aumento percentual apenas ao salário bruto do funcionário identificado.
+
+Caso o Id informado não exista, exibir uma mensagem informando que o funcionário não foi encontrado e abortar a operação de aumento. Ao final, exibir a lista atualizada dos funcionários.
+
+Regras importantes:
+
+- O salário não pode ser alterado livremente.
+- O salário bruto só pode ser modificado por meio do método responsável pelo aumento percentual.
+- Deve ser aplicada a técnica de encapsulamento para proteger os atributos da classe Funcionario.
+- As regras de validação já existentes para nome, salário e imposto devem ser mantidas.
 
 ## Estrutura do Projeto
 
