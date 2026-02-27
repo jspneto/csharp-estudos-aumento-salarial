@@ -5,10 +5,11 @@ namespace Projeto.Src;
 class Funcionario
 {
     private string _nome;
+    public int Id { get; private set; }
     public double SalarioBruto { get; private set; }
-    public double Imposto {get; private set; }
+    public double Imposto { get; private set; }
 
-    public Funcionario(string nome, double salario, double imposto)
+    public Funcionario(int id, string nome, double salario, double imposto)
     {
         if (NomeValido(nome))
         {
@@ -19,9 +20,20 @@ class Funcionario
             _nome = "Funcionário";
         }
 
+        if (IdValido(id))
+        {
+            Id = id;
+        }
+        else
+        {
+            Id = 1000;
+        }
+
         SalarioBruto = ValidarSalario(salario);
         Imposto = ValidarImposto(imposto);
     }
+
+    public Funcionario(string nome) : this(1000, nome, 3000.0, 150.0) {}
 
     public string Nome
     {
@@ -38,8 +50,6 @@ class Funcionario
             }
         }
     }
-
-    public Funcionario(string nome) : this(nome, 3000.0, 150.0) {}
 
     private static bool NomeValido(string nome)
     {
@@ -77,6 +87,18 @@ class Funcionario
         }
     }
 
+    public static bool IdValido(int id)
+    {
+        if (id >= 1000 && id <= 9999)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public double SalarioLiquido()
     {
         return SalarioBruto - Imposto;
@@ -92,7 +114,8 @@ class Funcionario
 
     public override string ToString()
     {
-        return $"Nome: {Nome}\n"
+        return $"ID: {Id}\n" 
+            + $"Nome: {Nome}\n"
             + $"Salário Bruto: $ {SalarioBruto.ToString("F2", CultureInfo.InvariantCulture)}\n"
             + $"Salário Líquido: $ {SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}";
     }
