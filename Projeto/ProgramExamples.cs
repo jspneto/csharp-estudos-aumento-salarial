@@ -6,21 +6,40 @@ static class ProgramExamples
 {
     public static void SolucaoProblema()
     {
-        Console.WriteLine("Entre com os dados do funcionário:");
-        Funcionario f = FuncionarioInputs.CriarFuncionario();
-        
-        Console.WriteLine();
-        Console.WriteLine("Dados do funcionário:");
-        Console.WriteLine(f.ToString());
+        FuncionarioLista lista = new();
+
+        Console.Write("Entre com o número de funcionários: ");
+        int numero = int.Parse(Console.ReadLine()!);
+
+        for (int i = 0; i < numero; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine($"Entre com os dados do {i+1}º funcionário: ");
+            Funcionario f = FuncionarioInputs.CriarFuncionario();
+
+            while (!lista.FuncionarioAdicionado(f))
+            {
+                Console.Write($"Já existe um funcionário com o ID {f.Id}.");
+                Funcionario funcNovoId = FuncionarioListaInputs.ColetarNovoIdFuncionario(f);
+                f = funcNovoId;
+            }
+        }
 
         Console.WriteLine();
-        Console.Write("Informe o percentual de aumento: ");
+        Console.Write("Informe um percentual para aumento salarial: ");
         double porcentagem = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        f.AumentarSalario(porcentagem);
+        Console.Write("Informe o ID do funcionário cujo salário sofrerá reajuste: ");
+        int id = int.Parse(Console.ReadLine()!);
+
+        if (!lista.SalarioReajustado(id, porcentagem))
+        {
+            Console.WriteLine();
+            Console.WriteLine($"O funcionário de ID {id} não foi encontrado. Abortando operação.");
+        }
 
         Console.WriteLine();
-        Console.WriteLine("Dados atualizados:");
-        Console.WriteLine(f.ToString());
+        Console.WriteLine("Lista de funcionários: ");
+        Console.WriteLine(lista.ToString());
     }
 
     public static void ExemploConstrutores()
