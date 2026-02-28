@@ -4,19 +4,25 @@ Programa simples em C# para leitura e exibição de dados de um funcionário, c�
 
 ## Detalhes Gerais
 
-- **Versão**: 0.4
-- **Conceito aplicado:** Validação de Entradas
+- **Versão**: 0.5
+- **Conceito aplicado:** Encapsulamento de Listas
 
 ## Descrição da Tag
 
-Implementacao de validacoes internas na classe Funcionario para garantir integridade dos dados.
+Implementacao de cadastro de multiplos funcionarios utilizando lista, garantindo unicidade de identificador.
 
-Foram criados metodos privados para validar nome, salario e imposto, definindo valores minimos e limites aceitaveis conforme regras de negocio.
+Foi criada a classe FuncionarioLista para encapsular a colecao, fornecendo operacoes de adicao com validacao de id repetido e reajuste salarial com busca por id.
 
-O metodo AumentarSalario tambem passou a validar o percentual informado, impedindo aplicacao de reajustes negativos ou invalidos.
+O fluxo principal foi atualizado para ler N funcionarios, impedir repeticoes de id e aplicar aumento percentual a um funcionario especifico, exibindo ao final a lista atualizada.
 
-Esta versao fortalece o modelo de dominio ao concentrar regras de negocio diretamente na entidade.
+Esta versao introduz manipulacao de colecoes e operacoes orientadas a identidade no dominio.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.1.png" alt="Solução Problema" width="936">
+(id do fucnionário existe)
+
+<img src="Img/Screenshot-v0.5-idExiste.png" alt="Solução Problema" width="936">
+
+(id do funcionário não existe)
+
+<img src="Img/Screenshot-v0.5-idNaoExiste.png" alt="Solução Problema" width="936">
