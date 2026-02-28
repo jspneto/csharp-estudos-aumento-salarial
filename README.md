@@ -45,7 +45,9 @@ Regras importantes:
    |- Src/
       |- IO/
          |- FuncionarioInputs.cs
+         |- FuncionarioListaInputs.cs
       |- Funcionario.cs
+      |- FuncionarioLista.cs
    |- Program.cs
    |- ProgramExamples.cs
    |- Projeto.csproj
@@ -61,6 +63,7 @@ Regras importantes:
 - [**v0.2**][2] — Aplicacao de construtores e sobrecarga na classe Funcionario
 - [**v0.3**][3] — Aplicacao de encapsulamento na classe Funcionario
 - [**v0.4**][4] — Validacao e regras de negocio na classe Funcionario
+- [**v0.5**][5] — Lista de funcionarios com id unico e reajuste por id
 
 ## Objetivo Educacional
 
@@ -70,3 +73,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [2]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.2/Projeto "v0.2"
 [3]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.3/Projeto "v0.3"
 [4]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.4/Projeto "v0.4"
+[5]: https://github.com/jspneto/csharp-estudos-aumento-salarial/tree/v0.5/Projeto "v0.5"
